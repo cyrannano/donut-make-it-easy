@@ -5,7 +5,7 @@ C++ based interface that lets you look at donuts and other bizzare 3D shapes in 
 
 The main idea/goal is to rasterize 3D shapes in the terminal using ASCII characters
 
-Being able to rasterize and render in real time a torus with and ability to rotate it with a fixed light source will be considered as a success.
+Being able to rasterize and render in real time a torus with an ability to rotate it with a fixed light source will be considered as a success.
 
 # Todo
 - [x] Get/Update terminal size info

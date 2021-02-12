@@ -6,6 +6,11 @@
 #include <unistd.h>
 #include <iostream>
 
+struct Pos {
+	int x;
+	int y;
+};
+
 class Interface  
 {
 	private:
@@ -18,6 +23,8 @@ class Interface
 		~Interface();
 
 		void updateWorkspaceSize();
-
+		void printCharacter(Pos, char);
+		void clearTerminal();
+		Pos getTerminalSize();
 };
 #endif

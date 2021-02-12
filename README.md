@@ -9,7 +9,7 @@ Being able to rasterize and render in real time a torus with an ability to rotat
 
 # Todo
 - [x] Get/Update terminal size info
-- [ ] Draw ASCII character at given position
+- [X] Draw ASCII character at given position
 - [ ] Drawing 2D shapes
 - [ ] Rotating 2D shapes
 - [ ] Figure out the details about math behind 3D shapes rendering
@@ -18,6 +18,12 @@ Being able to rasterize and render in real time a torus with an ability to rotat
 
 
 # Changelog
+## 0.0.1
+- Implemented printing single character at given position in the terminal
+- Created new virtual class Object, inherited from Interface (not sure wether thats good or not. It seems a bit evil, might change it later)
+- Created new class Cube, inherited from Object
+- Implemented screen clearing. Works kinda ok but looks kinda ugly. Probably will change it later
+- At this point program just fills the terminal with # signs as a test. It should react to terminal resizing and behave accordingly.
 ## 0.0.0
 - Initial commits
 - Figuring out the environment/workspace

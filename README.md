@@ -10,7 +10,8 @@ Being able to rasterize and render in real time a torus with an ability to rotat
 # Todo
 - [x] Get/Update terminal size info
 - [X] Draw ASCII character at given position
-- [] Drawing 2D shapes
+- [ ] Drawing 2D shapes
+- [ ] Determine whether the point is inside a given area (ray casting method)
 - [X] Rotating 2D shapes
 - [ ] Figure out the details about math behind 3D shapes rendering
 - [ ] Dot product between light ray and 3D object to figure out the light intensity
@@ -18,6 +19,10 @@ Being able to rasterize and render in real time a torus with an ability to rotat
 
 
 # Changelog
+## 0.0.3
+- Tweaks to displaying points and calculating rotation and movement of a square. Using double instead of int. Rounding numbers to prevent from sudden and rough jumps between frames.
+- Started implementing ray casting method to determine whether the point lies inside a polygon. It will be used to fill a rectangle (and any given shape in the future) with pixels to make it colored. Dont know if thats a correct way to do it but we'll see.
+- In a ray casting algorithm need to figure out a good way to check if two segments are intersecting
 ## 0.0.2
 - Added Square class
 - Implemented 2D rotation and movement
@@ -28,7 +33,7 @@ Being able to rasterize and render in real time a torus with an ability to rotat
 
 ## 0.0.1
 - Implemented printing single character at given position in the terminal
-- Created new virtual class Object, inherited from Interface (not sure wether thats good or not. It seems a bit evil, might change it later)
+- Created new virtual class Object, inherited from Interface (not sure whether thats good or not. It seems a bit evil, might change it later)
 - Created new class Cube, inherited from Object
 - Implemented screen clearing. Works kinda ok but looks kinda ugly. Probably will change it later
 - At this point program just fills the terminal with # signs as a test. It should react to terminal resizing and behave accordingly.

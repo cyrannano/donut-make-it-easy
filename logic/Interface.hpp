@@ -5,6 +5,7 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 #include <iostream>
+#include <math.h>
 
 struct Pos {
 	double x;
@@ -26,5 +27,6 @@ class Interface
 		void printCharacter(Pos, std::string);
 		void clearTerminal();
 		Pos getTerminalSize();
+		bool rayCasting(Pos);
 };
 #endif

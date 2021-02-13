@@ -29,7 +29,7 @@ void Interface::updateWorkspaceSize() {
 }
 
 void Interface::printCharacter(Pos p, std::string c) {
-	printf("%c[%d;%df", 0x1B, (int)p.y/2, (int)p.x);
+	printf("%c[%d;%df", 0x1B, (int)round(p.y/2.0), (int)round(p.x));
 	std::cout << c;
 	fflush(stdout);
 }

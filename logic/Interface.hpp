@@ -7,8 +7,8 @@
 #include <iostream>
 
 struct Pos {
-	int x;
-	int y;
+	double x;
+	double y;
 };
 
 class Interface  
@@ -23,7 +23,7 @@ class Interface
 		~Interface();
 
 		void updateWorkspaceSize();
-		void printCharacter(Pos, char);
+		void printCharacter(Pos, std::string);
 		void clearTerminal();
 		Pos getTerminalSize();
 };

@@ -28,9 +28,9 @@ void Interface::updateWorkspaceSize() {
 	}
 }
 
-void Interface::printCharacter(Pos p, char c) {
-	printf("%c[%d;%df", 0x1B, p.y, p.x);
-	printf("%c", c);
+void Interface::printCharacter(Pos p, std::string c) {
+	printf("%c[%d;%df", 0x1B, (int)p.y/2, (int)p.x);
+	std::cout << c;
 	fflush(stdout);
 }
 
@@ -40,5 +40,5 @@ void Interface::clearTerminal() {
 }
 
 Pos Interface::getTerminalSize() {
-	return {terminalSize.ws_col, terminalSize.ws_row};
+	return {(double)terminalSize.ws_col, (double)terminalSize.ws_row};
 }

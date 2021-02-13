@@ -10,14 +10,22 @@ Being able to rasterize and render in real time a torus with an ability to rotat
 # Todo
 - [x] Get/Update terminal size info
 - [X] Draw ASCII character at given position
-- [ ] Drawing 2D shapes
-- [ ] Rotating 2D shapes
+- [] Drawing 2D shapes
+- [X] Rotating 2D shapes
 - [ ] Figure out the details about math behind 3D shapes rendering
 - [ ] Dot product between light ray and 3D object to figure out the light intensity
 - [ ] Object rotation, probably some matrix equations
 
 
 # Changelog
+## 0.0.2
+- Added Square class
+- Implemented 2D rotation and movement
+- For now program is drawing only vertices - not whole figures
+- Rotation is a bit wanky and 'choppy' but I think that's because of the terminal row/col size which is kinda big
+- When drawing shape the function is trying to compensate unevenness of row to col size. It does that simply by dividing height in half. But I feel like it's going to cause me trouble later. We will see.
+- Right now, main.cpp, is displaying a Square and rotating it counterclockwise while moving down right with a ratio 2:1
+
 ## 0.0.1
 - Implemented printing single character at given position in the terminal
 - Created new virtual class Object, inherited from Interface (not sure wether thats good or not. It seems a bit evil, might change it later)
